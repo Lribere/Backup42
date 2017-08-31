@@ -6,7 +6,7 @@
 /*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/31 19:25:49 by lribere           #+#    #+#             */
-/*   Updated: 2017/08/31 19:39:46 by lribere          ###   ########.fr       */
+/*   Updated: 2017/08/31 20:20:00 by lribere          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,14 @@ int		ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
-	char i;
-	char f;
 	
-	i = 'N';
-	f = 'P';
-	z = p
 	
-		if p => 0
-			{
-				ft_putchar(f);
-			}
-		else
-		{
-			ft_putchar(i);
+	if (n >= 0)
+		{	
+			ft_putchar('P');
 		}
-
-	return(0);
+	else
+		{
+			ft_putchar('N');
+		}
 }

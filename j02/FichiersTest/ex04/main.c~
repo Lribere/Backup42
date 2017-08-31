@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/31 19:25:49 by lribere           #+#    #+#             */
-/*   Updated: 2017/08/31 19:39:46 by lribere          ###   ########.fr       */
+/*   Created: 2017/08/31 12:23:31 by lribere           #+#    #+#             */
+/*   Updated: 2017/08/31 19:03:34 by lribere          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
+int     ft_putchar(char c);
+void    ft_print_numbers(void);
 
-int		ft_putchar(char c);
+int		main(void)
+{	
+	char c;
 
-void	ft_is_negative(int n)
-{
-	char i;
-	char f;
-	
-	i = 'N';
-	f = 'P';
-	z = p
-	
-		if p => 0
-			{
-				ft_putchar(f);
-			}
-		else
-		{
-			ft_putchar(i);
-		}
+	c = 'a';
 
-	return(0);
+	ft_print_numbers();
+	return (0);
 }
