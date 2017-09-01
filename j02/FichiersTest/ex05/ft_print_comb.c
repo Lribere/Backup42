@@ -1,23 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/31 12:23:31 by lribere           #+#    #+#             */
-/*   Updated: 2017/08/31 21:53:18 by lribere          ###   ########.fr       */
+/*   Created: 2017/08/31 22:35:30 by lribere           #+#    #+#             */
+/*   Updated: 2017/09/01 16:41:38 by lribere          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 int		ft_putchar(char c);
-void	ft_is_negative(int n);
 
-int		main()
+void	ft_print_comb(void)
 {
+	int	t[3] = {'0', '1', '2'};
 
-	ft_is_negative(-14);
-	return (0);
+	while (t[0] <= '7' && t[1] <= '8' && t[2] <= '9')
+	{
+		ft_putchar(t[0]);
+		ft_putchar(t[1]);
+		ft_putchar(t[2]);
+		ft_putchar(' ');
+		ft_putchar(',');
+		t[2]++;
+		if ( t[2] > '9')
+		{
+			t[1] = t[1] + 1;
+			t[2] = t[1] + 1;
+				if (t[1] > '8')
+				{
+					t[0] = t[0] + 1;
+					t[1] = t[0] + 1;
+					t[2] = t[0] + 2;
+				}
+		}
+    }
 }
