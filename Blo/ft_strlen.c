@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/04 14:09:03 by lribere           #+#    #+#             */
-/*   Updated: 2017/09/04 14:13:53 by lribere          ###   ########.fr       */
+/*   Created: 2017/09/04 17:55:54 by lribere           #+#    #+#             */
+/*   Updated: 2017/09/04 18:15:30 by lribere          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include	<stdio.h>
 
-void
-
-void	ft_putstr(char *str)
+int		ft_strlen(char *str)
 {
+	int i;
+	
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return(i);
 
 }
 
-int		main()
+int main()
 {
+	
+	printf("%d", ft_strlen("iamthegod"));
 
 }
