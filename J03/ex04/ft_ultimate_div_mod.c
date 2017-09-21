@@ -6,11 +6,11 @@
 /*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/04 12:44:27 by lribere           #+#    #+#             */
-/*   Updated: 2017/09/04 14:04:27 by lribere          ###   ########.fr       */
+/*   Updated: 2017/09/05 17:23:12 by lribere          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mode(int *a, int *b)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int c;
 	int d;

@@ -1,0 +1,49 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/15 13:56:02 by lribere           #+#    #+#             */
+/*   Updated: 2017/09/20 12:59:56 by lribere          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int		ft_strlen(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
+
+char	*ft_strdup(char *src)
+{
+	char	*dest;
+	int		i;
+	int		k;
+
+	i = 0;
+	k = ft_strlen(src);
+	dest = (char*)malloc(sizeof(*dest) * (k + 1));
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}
+
+int main()
+{
+	char *src = "LOLOLOvgvrv,imvrimiotrmovgmrvimrvmvmgivv,";
+
+	printf("%s", ft_strdup(src));
+}

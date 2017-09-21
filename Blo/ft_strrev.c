@@ -6,7 +6,7 @@
 /*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/04 20:33:23 by lribere           #+#    #+#             */
-/*   Updated: 2017/09/04 23:32:13 by lribere          ###   ########.fr       */
+/*   Updated: 2017/09/05 16:57:17 by lribere          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strrev(char *str)
 
 int		main(void)
 {
-	char str[] = "Je vous enculeuhhh tous";
+	char str[] = "Multimilliardaire";
 
 	ft_putstr(str);
 	ft_strrev(str);

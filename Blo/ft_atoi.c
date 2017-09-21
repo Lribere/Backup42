@@ -1,0 +1,58 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/05 10:50:48 by lribere           #+#    #+#             */
+/*   Updated: 2017/09/07 17:02:41 by lribere          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void	ft_putstr(char *str);
+void	ft_putnbr(int nb);
+
+int		ft_atoi(char *str)
+{
+	int ga;
+	int neg;
+
+	neg = 1;
+	ga = 0;
+	while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v'
+	|| *str == '\f' || *str == '\r')
+		str++;
+	if (*str == '-')
+	{
+		neg = -1;
+		str++;
+	}
+	else if (*str == '+')
+	{
+		neg = 1;
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+	{
+		ga = ga * 10 + (*str - '0');
+		str++;
+	}
+	return (ga * neg);
+}
+
+int		main(void)
+{
+	int		nbr;
+	char	*str;
+
+	str = "awdse-2147483648";
+	//ft_putstr(str);
+	nbr = ft_atoi(str);
+	ft_putstr("   ");
+	printf("%d\n", (nbr));
+	printf(" %d", atoi(str));
+}

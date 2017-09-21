@@ -1,0 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Valeur.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/15 12:45:12 by lribere           #+#    #+#             */
+/*   Updated: 2017/09/15 12:45:39 by lribere          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+int main()
+{
+	printf("char : %d octets\n", sizeof(char));
+	printf("int : %d octets\n", sizeof(int));
+	printf("long : %d octets\n", sizeof(long));
+	printf("double : %d octets\n", sizeof(double));
+}

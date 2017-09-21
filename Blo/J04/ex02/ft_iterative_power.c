@@ -1,0 +1,42 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/05 23:57:09 by lribere           #+#    #+#             */
+/*   Updated: 2017/09/07 16:29:11 by lribere          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	ft_putnbr(int nb);
+
+int		ft_iterative_power(int nb, int power)
+{
+	int ser;
+
+	ser = 1;
+	if (power < 0)
+		return(0);
+	
+	while (power != 0)
+	{
+		ser = ser * nb ;
+		power --;
+	}
+	return(ser);
+}
+
+int main()
+{
+	int nb;
+	int power;
+	int ko;
+
+	nb = 4;
+	power = -3;
+
+	ko = ft_iterative_power(nb, power);
+	ft_putnbr(ko);
+}

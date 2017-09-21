@@ -6,7 +6,7 @@
 /*   By: lribere <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/04 17:55:54 by lribere           #+#    #+#             */
-/*   Updated: 2017/09/04 18:15:30 by lribere          ###   ########.fr       */
+/*   Updated: 2017/09/05 16:54:34 by lribere          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ int		ft_strlen(char *str)
 int main()
 {
 	
-	printf("%d", ft_strlen("iamthegod"));
+	printf("%d", ft_strlen("Multimilliardaire"));
 
 }
